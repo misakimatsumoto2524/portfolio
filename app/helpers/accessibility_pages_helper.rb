@@ -1,0 +1,2 @@
+module AccessibilityPagesHelper
+end

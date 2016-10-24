@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Portfolio</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <%= stylesheet_link_tag 'application', media: 'all',
+                                           'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+    <div id= "button" class="btn btn-default btn-lg">A</div>
+    <div id= "button2" class="btn btn-default btn-sm">A</div>
+  </head>
+  <body>
+    <header>
+        <nav>
+          <div class="navbar navbar-fixed-left text-center">
+          <ul class="nav navbar-nav">
+            <li><%= link_to "Home",  root_path %></li>
+            <li><%= link_to "Project", project_path  %></li>
+            <li><%= link_to "Resume", resume_path %></li>
+            <li><%= link_to "My Story", story_path %></li>
+            <li><%= link_to "Blog", blog_path %></li>
+            <div class = "icon"><%= link_to image_tag("linkedin.png", alt: "linkedin"),
+              'https://www.linkedin.com/in/misakimatsumoto/en' %>
+            </div>
+          </ul>
+        </div>
+        </nav>
+    </header>
+    <div class="container">
+      <div class = "row">
+        <%= yield %>
+      </div>
+  </div>
+  </body>
+  <div id="footer">
+    <p>© Misaki Matsumoto</p>
+  </div>
 </html>

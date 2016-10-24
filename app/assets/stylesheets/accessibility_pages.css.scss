@@ -1,0 +1,66 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+/*typography*/
+
+li {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 2em;
+}
+
+/* nav bar*/
+
+.navbar-fixed-left {
+  width: 250px;
+  position: fixed;
+  height: 100%;
+  border-right-style: solid;
+  border-radius: 0;
+  border-right-color: black;
+
+}
+
+.navbar-fixed-left .navbar-nav > li {
+  float: none;  /* Cancel default li float: left */
+}
+
+.container {
+  padding-left: 160px;
+}
+
+.navbar-nav li > a {
+  color: black;
+  padding-left: 60px;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+
+
+  &:hover {
+      color: #6495ED;
+      background-color: transparent;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+  }
+  &:focus {
+      color: #6495ED;
+      background-color: transparent;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+  }
+  &:active {
+      color: #6495ED;
+      background-color: transparent;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+  }
+}
+
+/*icon*/
+.icon {
+  padding-top: 100px;
+  text-align: center;
+
+}

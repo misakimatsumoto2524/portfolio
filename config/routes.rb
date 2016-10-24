@@ -1,4 +1,25 @@
 Rails.application.routes.draw do
+  root 'pages#home'
+
+  get 'project' => 'pages#project'
+
+  get 'story' => 'pages#story'
+
+  get 'resume' => 'pages#resume'
+
+  get 'blog' => 'pages#blog'
+
+  get 'big' => 'accessibility_pages#big'
+
+  get 'med' => 'accessibility_pages#med'
+
+  get 'inverse' => 'accessibility_pages#inverse'
+
+end
+
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,4 +74,3 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
