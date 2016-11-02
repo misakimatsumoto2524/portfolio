@@ -52,16 +52,18 @@ h3 {
 
 }
 
-span#purple {
+span#bold {
   font-size: 1.2em;
   font-family: 'Lato', sans-serif;
-  color: purple;
+  font-weight: bold;
+  line-height: 150%
 }
 
 p{
   font-size: 1.2em;
   font-family: 'Lato', sans-serif;
   color: gray;
+  line-height: 150%
 }
 
 /* nav bar*/
@@ -161,6 +163,12 @@ div#large-text {
 }
 
 #cat {
+  padding: 15px;
+}
+
+/*resume*/
+.resume {
+  background-color: #F5F5F5;
   padding: 15px;
 }
 
